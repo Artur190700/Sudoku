@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUDOKU</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/pastime.png">
+</head>
+
+<body>
+    <div class="square"></div>
+    <div id="winWindow" style="visibility: hidden;" class="oplasut">
+        <div>
+
+            <h1>YOU WON!</h1>
+            <button class="button" onclick="location.reload()">Play Again</button>
+        </div>
+
+    </div>
+
+    <div class="numbers">
+        <div id=1 onclick="numDrop(1)" class="numbersButton">1</div>
+        <div id=2 onclick="numDrop(2)" class="numbersButton">2</div>
+        <div id=3 onclick="numDrop(3)" class="numbersButton">3</div>
+        <div id=4 onclick="numDrop(4)" class="numbersButton">4</div>
+        <div id=5 onclick="numDrop(5)" class="numbersButton">5</div>
+        <div id=6 onclick="numDrop(6)" class="numbersButton">6</div>
+        <div id=7 onclick="numDrop(7)" class="numbersButton">7</div>
+        <div id=8 onclick="numDrop(8)" class="numbersButton">8</div>
+        <div id=9 onclick="numDrop(9)" class="numbersButton">9</div>
+        <div id=10 onclick="eraser(10)" class="picture1"><input type="image" alt="Retin"
+                style="height: 50px; width: 50px;" src="photo/rubber-pencil-eraser-doodle-sketch-260nw-2174872101.webp">
+        </div>
+    </div>
+    <div class="levels">
+        <button id="easy" onclick="generateSudoku('easy')" class="backColor">Easy</button>
+        <button id="medium" onclick="generateSudoku('medium')" class="backColor">Medium</button>
+        <button id="hard" onclick="generateSudoku('hard')" class="backColor">Hard</button>
+    </div>
+    <script src="lib/sudoku.js"></script>
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
